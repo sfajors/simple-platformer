@@ -1,0 +1,25 @@
+#puzzle {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #fcf5d8;
+    cursor: pointer;
+}
+
+#startCanvas {
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    line-height: 500px; /* This will vertically center the text */
+    font-size: 24px;
+}
