@@ -1,3 +1,10 @@
+body {
+    background-color: #fffcf6;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 #puzzle {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -16,10 +23,54 @@
 }
 
 #startCanvas {
-    background-color: #f2f2f2;
+    background-color: #fffbde;
     font-family: 'Arial', sans-serif;
     color: #333;
     text-align: center;
     line-height: 500px; /* This will vertically center the text */
     font-size: 24px;
+    max-width: 500px;
+}
+
+#gameCanvas {
+    max-width: 500px;
+    background-color: white;
+    display: none;
+}
+
+/* Media Queries for game*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #startCanvas {
+        max-width: 400px;
+    }
+    #gameCanvas {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024) {
+    #startCanvas {
+        width: 650px;
+    }
+    #gameCanvas {
+        width: 650px;
+    }
+}
+
+@media screen and (min-wdith: 1025px) and (max-width: 1200px) {
+    #startCanvas {
+        min-width: 950px;
+    }
+    #gameCanvas {
+        min-width: 950px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    #startCanvas {
+        min-width: 1000px;
+    }
+    #gameCanvas {
+        min-width: 1000px;
+    }
 }
